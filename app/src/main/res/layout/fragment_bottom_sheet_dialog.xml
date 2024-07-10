@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.msn.com"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            android:layout_weight="0.5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_weight="0.5"/>-->
+
+    </LinearLayout>
+
+
+    <!-- Add your scrollable content here -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/news3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="NEW DELHI: BSP chief Mayawati has reinstated nephew Akash Anand as the national coordinator and her successor after setback in the Lok Sabha elections.
+The decision was announced after former UP chief minister and BSP leader held a meeting to analyze the party's performance in the recent 2024 Lok Sabha elections.
+Earlier in May, Mayawati announced the decision of removing Anand from the posts of national coordinator and her successor till he attained political maturity.Pradeep Gupta, the chief of Axis My India, revealed that exit polls are a loss-making venture for his company, sustained primarily for the visibility they provide rather than for profit. Gupta said that 70% of Axis My India's clientele consists of corporate clients, which is the main source of the company's revenue.Exit polls are a loss-making venture because no media house will pay as much money as that invested on the ground…the only profit that we make in exit polls is that we get visibility which we do not get while doing market research for corporate clients, he said in an interaction with PTI editors. Axis My India's exit poll had predicted 361-400 seats for the BJP-led alliance in the Lok Sabha elections, including 67 seats in Uttar Pradesh. However, the actual results showed the BJP securing only 240 seats, falling short of the majority mark, with Uttar Pradesh proving to be a significant setback as the party won just 33 seats."
+                android:textSize="16sp"/>
+
+            &lt;!&ndash; Add more items as needed &ndash;&gt;
+
+        </LinearLayout>-->
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
